@@ -208,7 +208,7 @@ def barplot_in_common(feature):
         y=range(cardinality),
         left=df_modalites['probas'],
         width=(1 - df_modalites['probas']),
-        color='limegreen',
+        color=' #a2ff62 ',
     )
     plt.xlabel('Observed probability of default')
     plt.ylabel(feature)
@@ -307,7 +307,7 @@ def contourplot_in_common(feature1, feature2):
     # Plotting
     plt.style.use('seaborn')
     fig = plt.figure(edgecolor='black', linewidth=4)
-    plt.contourf(X, Y, grid_proba_default, cmap='Reds')
+    plt.contourf(X, Y, grid_proba_default, cmap=' #ff0017 ')
     plt.colorbar(shrink=0.8)
     plt.xlabel(feature1)
     plt.ylabel(feature2)
@@ -398,7 +398,7 @@ def lineplot_in_common(feature):
     plt.fill_between(x=feature_value_start,
                      y1=proba_default,
                      y2=1,
-                     color='limegreen')
+                     color=' #a2ff62 ')
     plt.ylabel('Observed probability of default')
     plt.xlabel(feature)
     fig.suptitle(f'Observed probability of default as a function of {feature}',
