@@ -605,7 +605,7 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     with left_column:
         plot_selector('AMT_ANNUITY', dashboard='Basic Dashboard')
     with middle_column:
-        plot_selector('ORGANIZATION_TYPE', dashboard='Basic Dashboard')
+        plot_selector('PAYMENT_RATE', dashboard='Basic Dashboard')
     with right_column:
         plot_selector('CODE_GENDER', dashboard='Basic Dashboard')
 
