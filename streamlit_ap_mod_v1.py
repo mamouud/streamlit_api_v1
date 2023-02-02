@@ -548,7 +548,7 @@ if dashboard_choice == 'Homepage':
     "The dashboard is available in 2 versions:"
     "- A **basic** version, to be used by customer relation management."
     "- An **advanced**, more detailed version for deeper understanding of the data."
-    "An **exploratory data analysis** is also available for the raw data used for the LGBM model training."
+
     " "
 
 # Basic and Advanced Dashboards #######################################################
