@@ -527,8 +527,7 @@ with st.sidebar:
             size = len(clients)
             client_index = np.random.randint(0, size - 1)
             id_client = clients[client_index]
-    else:
-        st.markdown("<i>…</i>", unsafe_allow_html=True)     
+   
 
 # Homepage #######################################################
 if dashboard_choice == 'Homepage':
