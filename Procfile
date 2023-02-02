@@ -1,0 +1,1 @@
+web sh setup.sh && streamlit run streamlit_ap_mod_v1.py
