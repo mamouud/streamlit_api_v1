@@ -501,8 +501,8 @@ st.set_page_config(page_title="Project 7 Dashboard",
 
 # Side bar
 with st.sidebar:
-    image_HC = Image.open('./img/Home-Credit-logo.jpg')
-    st.image(image_HC, width=300)
+    #image_HC = Image.open('./img/Home-Credit-logo.jpg')
+    #st.image(image_HC, width=300)
 
     # Dashboard selector
     st.write('## Site Map:')
