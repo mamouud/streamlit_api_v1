@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch
 from matplotlib.cm import RdYlGn
-from PIL import Image
+#from PIL import Image
 from random import randint
 
 # Constants #########################################################################
