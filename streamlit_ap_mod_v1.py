@@ -515,7 +515,8 @@ with st.sidebar:
     for dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
         # Client selector
         st.write('## Client ID:')
-        id_client = st.text_input("Enter client ID")
+        id_client = st.text_input("Enter client ID", value="324806",key="1")
+        
         # st.caption("Example of client predicted negative (no default) : 324806")
         # st.caption("Example of client predicted positive (credit default) : 318063")
         st.caption(" ")
