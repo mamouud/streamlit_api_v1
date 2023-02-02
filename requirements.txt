@@ -4,5 +4,4 @@ pandas
 requests
 streamlit
 scipy
-PIL
-random 
+ 
