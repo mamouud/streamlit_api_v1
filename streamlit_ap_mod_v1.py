@@ -512,10 +512,11 @@ with st.sidebar:
     st.write('## ')
     st.write('## ')
 
-    for dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
+    if dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
+        
         # Client selector
         st.write('## Client ID:')
-        id_client = st.text_input("Enter client ID", value="324806",key=f"{id}")
+        id_client = st.text_input("Enter client ID", value="324806")
         
         # st.caption("Example of client predicted negative (no default) : 324806")
         # st.caption("Example of client predicted positive (credit default) : 318063")
@@ -526,6 +527,8 @@ with st.sidebar:
             size = len(clients)
             client_index = randint(0, size - 1)
             id_client = clients[client_index]
+    else:
+        st.markdown("<i>…</i>", unsafe_allow_html=True)
 
 # Homepage #######################################################
 if dashboard_choice == 'Homepage':
