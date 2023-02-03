@@ -705,4 +705,3 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
 
     # Final line
     "---------------------------"
-
