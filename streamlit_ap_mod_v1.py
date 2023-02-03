@@ -208,7 +208,7 @@ def barplot_in_common(feature):
         y=range(cardinality),
         left=df_modalites['probas'],
         width=(1 - df_modalites['probas']),
-        color=' #a2ff62 ',
+        color='#a2ff62',
     )
     plt.xlabel('Observed probability of default')
     plt.ylabel(feature)
@@ -398,7 +398,7 @@ def lineplot_in_common(feature):
     plt.fill_between(x=feature_value_start,
                      y1=proba_default,
                      y2=1,
-                     color=' #a2ff62 ')
+                     color='#a2ff62')
     plt.ylabel('Observed probability of default')
     plt.xlabel(feature)
     fig.suptitle(f'Observed probability of default as a function of {feature}',
