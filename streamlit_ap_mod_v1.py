@@ -619,7 +619,7 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     with middle_column:
         plot_selector('PAYMENT_RATE', dashboard='Basic Dashboard')
     with right_column:
-        plot_selector('CODE_GENDER', dashboard='Basic Dashboard')
+        plot_selector('CC_CNT_DRAWINGS_CURRENT_VAR', dashboard='Basic Dashboard')
 
     # Advanced dashboard
     if dashboard_choice == 'Advanced Dashboard':
