@@ -203,7 +203,7 @@ def barplot_in_common(feature):
     plt.style.use('seaborn')
     fig = plt.figure(edgecolor='black', linewidth=4)
     plt.ylim(-0.6, cardinality - 0.4)
-    plt.barh(y=range(cardinality), width=df_modalites['probas'], color='r')
+    plt.barh(y=range(cardinality), width=df_modalites['probas'], color='#eb2f06')
     plt.barh(
         y=range(cardinality),
         left=df_modalites['probas'],
@@ -307,7 +307,7 @@ def contourplot_in_common(feature1, feature2):
     # Plotting
     plt.style.use('seaborn')
     fig = plt.figure(edgecolor='black', linewidth=4)
-    plt.contourf(X, Y, grid_proba_default, cmap=' #ff0017 ')
+    plt.contourf(X, Y, grid_proba_default, cmap=' Reds ')
     plt.colorbar(shrink=0.8)
     plt.xlabel(feature1)
     plt.ylabel(feature2)
@@ -394,7 +394,7 @@ def lineplot_in_common(feature):
     fig = plt.figure(edgecolor='black', linewidth=4)
     plt.plot(feature_value_start, proba_default, color='k')
     ylim_high = plt.ylim()[1]
-    plt.fill_between(x=feature_value_start, y1=proba_default, y2=0, color='r')
+    plt.fill_between(x=feature_value_start, y1=proba_default, y2=0, color='#eb2f06')
     plt.fill_between(x=feature_value_start,
                      y1=proba_default,
                      y2=1,
