@@ -307,7 +307,7 @@ def contourplot_in_common(feature1, feature2):
     # Plotting
     plt.style.use('seaborn')
     fig = plt.figure(edgecolor='black', linewidth=4)
-    plt.contourf(X, Y, grid_proba_default, cmap=' Reds ')
+    plt.contourf(X, Y, grid_proba_default, cmap=' Blues' )
     plt.colorbar(shrink=0.8)
     plt.xlabel(feature1)
     plt.ylabel(feature2)
@@ -642,7 +642,7 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     selected_feature = st.selectbox(
         f'Choose a feature among {len(sorted_options)}',
         options=sorted_options,
-        index=sorted_options.index('DAYS_BIRTH'))
+        index=sorted_options.index('AMT_ANNUITY'))
 
     # Basic dashboard
     plot_selector(selected_feature, dashboard='Basic Dashboard')
