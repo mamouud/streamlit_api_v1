@@ -629,7 +629,7 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     selected_feature = st.selectbox(
         f'Choose a feature among {len(sorted_options)}',
         options=sorted_options,
-        index=sorted_options.index('AMT_ANNUITY'))
+        index=sorted_options.index('PAYMENT_RATE'))
 
     # Basic dashboard
     plot_selector(selected_feature, dashboard='Basic Dashboard')
