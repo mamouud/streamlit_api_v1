@@ -81,17 +81,17 @@ def rectangle_gauge(id, client_probability):
     st.pyplot(fig)
 
 
-def get_shap(id_client: int):
-    """Gets the SHAP values of a client on the API server.
-    Args : 
-    - id_client (int).
-    Returns :
-    - pandas dataframe with 2 columns : features, SHAP values.
-    """
-    json_client = df_test_sample.loc[int(id_client)].to_json()
-    response = requests.get(HOST + '/shap/', data=json_client)
-    df_shap = pd.read_json(eval(response.content), orient='index')
-    return df_shap
+#def get_shap(id_client: int):
+   # """Gets the SHAP values of a client on the API server.
+   # Args : 
+   # - id_client (int).
+   # Returns :
+   # - pandas dataframe with 2 columns : features, SHAP values.
+   # """
+    #json_client = df_test_sample.loc[int(id_client)].to_json()
+    #response = requests.get(HOST + '/shap/', data=json_client)
+    #df_shap = pd.read_json(eval(response.content), orient='index')
+    #return df_shap
 
 
 def load_data(filename, path='./resources/'):
@@ -658,9 +658,9 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
 
     # Local SHAP
     "---------------------------"
-    st.header('Impact of features on prediction of default')
-    df_shap = get_shap(100013)
-    shap_barplot(df_shap)
+    #st.header('Impact of features on prediction of default')
+    #df_shap = get_shap(100013)
+    #shap_barplot(df_shap)
 
     # Display client data
     "---------------------------"
