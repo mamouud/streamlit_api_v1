@@ -667,10 +667,10 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     st.header(f'Data for client {id_client}')
     with st.expander("See data", expanded=False):
         for feature in list_categorical_features:
-            encoded_feature = one_client_pandas[feature].iloc[0]
+            encoded_feature = one_client_pandas[feature].iloc[1]
             decoded_feature = dict_categorical_features[feature][
                 encoded_feature]
-            one_client_pandas[feature].iloc[0] = decoded_feature
+            one_client_pandas[feature].iloc[1] = decoded_feature
         one_client_pandas = one_client_pandas.append(pd.Series(),
                                                      ignore_index=True)
         for feature in one_client_pandas.columns:
