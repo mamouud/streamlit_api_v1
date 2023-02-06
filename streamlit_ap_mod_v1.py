@@ -668,20 +668,6 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     # Display client data
     "---------------------------"
     
-
-    
-    #st.header(f'Data for client {id_client}')
-    @st.cache (allow_output_mutation=True)
-    def load_age_population(data):
-        data_age = round((df_test_sample["DAYS_BIRTH"]/365), 2)
-        return data_age
-    #Age distribution plot
-    data_age = load_age_population(df_test_sample)
-    fig, ax = plt.subplots(figsize=(10, 5))
-    sns.histplot(data_age, edgecolor = 'k', color="goldenrod", bins=20)
-    ax.axvline(int(df_test_sample["DAYS_BIRTH"].values / 365), color="green", linestyle='--')
-    ax.set(title='Customer age', xlabel='Age(Year)', ylabel='')
-    st.pyplot(fig)
     #with st.expander("See data", expanded=False):
        # for feature in list_categorical_features:
             #encoded_feature = one_client_pandas[feature].iloc[1]
