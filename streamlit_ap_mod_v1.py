@@ -245,19 +245,6 @@ def barplot(feature):
     st.pyplot(figure)
     st.caption(feature + ": " + feature_description(feature))
 
-def get_shap(id_client: int):
-    """Gets the SHAP values of a client on the API server.
-    Args : 
-    - id_client (int).
-    Returns :
-    - pandas dataframe with 2 columns : features, SHAP values.
-    """
-    json_client = df_test_sample.loc[int(id_client)].to_json()
-    response = requests.get(HOST + '/shap/', data=json_client)
-    df_shap = pd.read_json(eval(response.content), orient='index')
-    return df_shap
-
-
 def contourplot_in_common(feature1, feature2):
     """Contour plot for the observed probability of default as a function of 2 features. Common to all clients.
     Args :
@@ -672,7 +659,7 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     # Local SHAP
     "---------------------------"
     st.header('Impact of features on prediction of default')
-    df_shap = get_shap(id_client)
+    df_shap = get_shap(id_client:100013)
     shap_barplot(df_shap)
 
     # Display client data
