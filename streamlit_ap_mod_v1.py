@@ -659,7 +659,7 @@ elif dashboard_choice in ['Basic Dashboard', 'Advanced Dashboard']:
     # Local SHAP
     "---------------------------"
     st.header('Impact of features on prediction of default')
-    df_shap = get_shap(id_client:100013)
+    df_shap = get_shap(100013)
     shap_barplot(df_shap)
 
     # Display client data
