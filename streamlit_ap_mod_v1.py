@@ -307,7 +307,7 @@ def contourplot_in_common(feature1, feature2):
     # Plotting
     plt.style.use('seaborn')
     fig = plt.figure(edgecolor='black', linewidth=4)
-    plt.contourf(X, Y, grid_proba_default, cmap=' Blues' )
+    plt.contourf(X, Y, grid_proba_default, cmap='Blues' )
     plt.colorbar(shrink=0.8)
     plt.xlabel(feature1)
     plt.ylabel(feature2)
