@@ -4,12 +4,12 @@ Parcours Data Science
 Projet n°7 : "Implémentez un modèle de scoring"
 
 ## Description du projet
-* Supervised learning sur un jeu de données déséquilibré (pénalisation des classes par Sample Weights et SMOTE)
-* Choix d'une métrique adaptée à un problème métier (F Beta Score)
+* Supervised learning sur un jeu de données déséquilibré (pénalisation des classes par  SMOTE)
+* Choix d'une métrique adaptée à un problème métier 
 * Construction d'un modèle de scoring supervisé
-* Mise en place d'une API Flask pour appeler le modèle de prédiction 
+* Mise en place d'une API FastAPI pour appeler le modèle de prédiction 
 * Construction d'un dashboard interactif à destination des gestionnaires de relation client (Streamlit)
-* Utilisation de gitlab pour versioning
+* Utilisation de github pour versioning
 
 Source des données : https://www.kaggle.com/c/home-credit-default-risk/data
 
@@ -26,5 +26,5 @@ Source des données : https://www.kaggle.com/c/home-credit-default-risk/data
 # streamlit_api_v1
 
 Dossier comprenant le code est les resources pour la conception du Dashbord .
-    - [ ] https://streamlit7-app.herokuapp.com/
+    -  https://streamlit7-app.herokuapp.com/
 
